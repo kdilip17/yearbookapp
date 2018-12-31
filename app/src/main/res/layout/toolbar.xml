@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/inflate_toolbar_layout"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_52"
+              android:background="@color/colorPrimary"
+              app:layout_constraintLeft_toRightOf="parent"
+              app:layout_constraintRight_toLeftOf="parent"
+              app:layout_constraintTop_toBottomOf="parent">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/inflate_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="vertical">
+
+        <com.hm.widgets.CustomTextView
+                android:id="@+id/inflater_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp_20"
+                app:typeface="montserrat_regular" />
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>
