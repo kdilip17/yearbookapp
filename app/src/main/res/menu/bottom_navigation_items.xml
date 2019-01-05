@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
             android:id="@+id/menu_budget"
-            android:title="@string/budget" />
+            android:title="@string/budget"/>
 
     <item
             android:id="@+id/menu_category"
-            android:title="@string/category" />
+            android:title="@string/category"/>
 
     <item
             android:id="@+id/menu_monthly_budget"
-            android:title="@string/monthly_budget" />
+            android:title="@string/monthly_budget"/>
 
 </menu>
