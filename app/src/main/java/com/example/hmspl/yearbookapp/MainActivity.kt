@@ -8,26 +8,24 @@ import android.support.v4.app.Fragment
 import android.view.MenuItem
 
 
-
-
-class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
+class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         //val fragment: Fragment
         when (item.itemId) {
             R.id.menu_budget -> {
-                toolbar!!.title=getString(R.string.budget)
+                toolbar!!.title = getString(R.string.budget)
                 // fragment = Fragment()
                 // loadFragment(fragment)
                 return true
             }
             R.id.menu_category -> {
-                toolbar!!.title=getString(R.string.category)
+                toolbar!!.title = getString(R.string.category)
                 //fragment = Fragment()
                 // loadFragment(fragment)
                 return true
             }
             R.id.menu_monthly_budget -> {
-                toolbar!!.title=getString(R.string.monthly_budget)
+                toolbar!!.title = getString(R.string.monthly_budget)
                 //  fragment = Fragment()
                 // loadFragment(fragment)
                 return true
@@ -44,7 +42,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         toolbar = supportActionBar
 
         // load the store fragment by default
-        toolbar!!.title=getString(R.string.budget)
+        toolbar!!.title = getString(R.string.budget)
         //loadFragment(new StoreFragment());
     }
 
